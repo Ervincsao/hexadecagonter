@@ -11,25 +11,31 @@ Licenc: GNU GPL
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
     <title>Dolgozat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-    
     <div class="container">
-        <h1>Hexadecagon Területe</h1>
-        <div>
-            <label for="oldal">Oldal</label>
-            <input type="" id="oldal">
-        </div>
-        <div>
-            <button id="calcButton">Számitás</button>
-        </div>
-        <div>
-            <label for="volume">Térfogat</label>
-            <input type="" id="volume">
+        <h1>
+            Hexadecagon Területe
+        </h1>
+        <div class="terulet">
+            <div class="input">
+                <label for="sideLength">Oldal</label>
+                <input type="text" id="sideLength">
+                <button id="calcButton">Számitás</button>
+            </div>
+            <div class="input">
+                <label for="volume">Térfogat</label>
+                <input type="" id="volume">
+            </div>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
